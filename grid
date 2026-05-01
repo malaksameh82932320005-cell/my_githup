@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: #1a1a1a;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+         .parent{
+           color: #eee;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap:10px;
+          width: 800px;
+          text-align: center;
+       
+          grid-template-areas: "head head head"
+          "side cont1 cont1"
+          "side cont2 cont3"
+          "foot foot foot";
+         }
+         header{
+            border: 2px solid black;
+            background: #6c5ce7;
+            grid-area: head;
+            padding: 10px;
+            border:2px solid black;
+         }
+         nav{
+            background: #00b894;
+            text-align: center;
+            grid-area: side;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             border:2px solid black;
+         }
+        .c1{
+            background:#0984e3;
+            padding: 10px;
+            grid-area: cont1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          border:2px solid black;
+           font-size: larger;
+        }
+        .c2{
+          background: #0984e3;
+            padding: 10px;
+            grid-area: cont2;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             border:2px solid black;
+              font-size: larger;
+        }
+        .c3{
+            background: #0984e3;
+            padding: 10px;
+            grid-area: cont3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             border:2px solid black;
+             font-size: larger;
+        }
+footer{
+    background: #6c5ce7;
+    text-align: center;
+    grid-area: foot;
+     border:2px solid black;
+      font-size: larger;
+}
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <header>
+                <h2>Header</h2>
+            </header>
+            <nav>Sidebar</nav>
+            
+                <div class="c1">content-1</div>
+                <div class="c2">content-2</div>
+                <div class="c3">content-3</div>
+           
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>
