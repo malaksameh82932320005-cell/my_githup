@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
- body {
-    background: linear-gradient(
-        135deg, 
-        #0f0c29, 
-        #302b63, 
-        #24243e
-    );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 500px;
+<style>
+
+    body{
+  
+    height: 600px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background:
+    radial-gradient(circle at top, #16324F, #0B1020 60%);
+    
 }
-            .card{
-                color:white;
-                border:1px solid rgba(255,255,255,0.1);
-                border-radius: 20px;
-                backdrop-filter: blur(15px);
-                background:rgba(255,255,255,0.05) ;
-             height: 300px;
-             width: 600px;
-             padding: 20px;
-            transition: all 0.5s ease;
-            cursor: pointer;
-         
-           
-            }
-            .card:hover{
-                transform: rotate(3deg);
-               
-            }
-            .circle{
-                width: 300px;
-                height: 300px;
-                border-radius: 50%;
-                background:#00d2ff;
-                filter: blur(100px);
-            position: absolute;
-            right: 65%;
-               
-            }
-            .ma{
-                background:#2563eb;
-                color: white;
-                border: 2px solid #2563eb;
-                border-radius: 10px;
-                width: 100px;
-                cursor: pointer;
-             transition: all 0.5 ease;
-             opacity: 0;
-             transform: translateY(30px) scale(0.1);
-            }
-            .card:hover .ma{
-                opacity: 1;
-                transform: translateY(0) scale(1);
-           
-                
-            }
-          
-        </style>
+
+div{
+    width: 270px;
+    height: 270px;
+    border: 6px solid #7Fc7B2;
+    border-radius: 50%;
+    text-align: center;
+ animation: circle 3s linear infinite;
+ background: #101322;
+}
+h2{
+    color: #8EDDD8;
+}
+#uu{
+    width: 150px;
+  border: none;
+    border-radius: 5px;
+   background: linear-gradient(90deg, #7FC7B2, #4D8F8B);
+    color: #EAFBFF;
+    padding: 7px;
+    animation: button 3s infinite alternate;
+}
+@keyframes button{
+
+    from{
+        box-shadow: 0 0 10px #5DAEFF;
+    }
+
+    to{
+        box-shadow: 0 0 30px #ff7eb9;
+    }
+}
+@keyframes circle{
+
+    from{
+        box-shadow: 0 0 10px #5DAEFF;
+       
+    }
+
+    to{
+        box-shadow: 0 0 30px #7CE7FF;
+       
+    }
+}
+#ii{
+  border:1px solid #5FCBC3;
+    border-radius: 8px;
+    background: #111827;
+    color: #DDF7F5;
+    padding: 6px;
+    transition: all 1s ease;
+    outline: none;
+}
+#uu{
+   border:1px solid #5FCBC3;
+    border-radius: 8px;
+    background: #1B2A4A;
+    color: #DDF7F5;
+    padding: 6px; 
+}
+#io{
+    border:1px solid #5FCBC3;
+    border-radius: 8px;
+    background: #111827;
+    color: #DDF7F5;
+    padding: 6px;
+    transition: all 0.4s ease;
+    outline: none;
+}
+#io:hover{
+border-color: #ff7eb9;
+}
+#ii:hover{
+border-color: #ff7eb9;
+}
+
+
+</style>
     </head>
     <body>
-        <div class="circle"></div>
-        <div class="card">
-        <h1>Glass Morphism</h1>
-   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus ducimus voluptatum quasi! Ipsa provident qui eaque autem possimus est temporibus dicta dignissimos! Optio repellat omnis nesciunt! Rerum dolore hic aut. Non nam repellendus corporis voluptatum alias eaque nisi pariatur mollitia reiciendis consectetur et ipsum, quae velit facere reprehenderit similique, molestias vero deleniti eos aliquam quas perspiciatis. Voluptate culpa consectetur perferendis eveniet eos et fugiat officia saepe </p>
-   <button class="ma">Done</button>
-    </div>
+   
+        <div>
+           
+            <form>
+        <h2>Login</h2>
+        <input type="text" id="ii" placeholder="Username">
+        <br><br>
+        <input type="password" id="io"  placeholder="Password"><br><br>
+        <input type="submit"  id= "uu" value="Sign In"><br><br>
+        </form>
+</div>
     </body>
 </html>
